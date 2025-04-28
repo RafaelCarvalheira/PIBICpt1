@@ -18,6 +18,7 @@ Este projeto tem como objetivo otimizar a execução de 100 instâncias do **VRP
 │   ├── main.jl               # Script principal para execução das instâncias
 │   ├── utils.jl              # Funções auxiliares para manipulação de dados
 │   └── utils2.jl             # Funções adicionais de suporte
+│   └── data_filter.jl        # Funções adicionais para filtragem dos resultados
 ├── .gitignore                # Arquivo para controle de versão
 ├── LICENSE                   # Licença do projeto (MBL 2.0)
 └── README.md                 # Documentação do projeto
