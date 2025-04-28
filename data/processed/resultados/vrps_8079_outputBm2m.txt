@@ -1,0 +1,18 @@
+Processando o arquivo: D:/rafaelvc/SUPERCODIGO/dados\vrps_8079.dat
+status= OPTIMAL
+ID = 8079
+Numero de clientes = 10
+OF (custo) = 161.25
+Best Objective = 161.25
+Best Bound = 161.25
+GAP = 0.0%
+x[6, B, B] = 1.0
+x[7, 6, B] = 1.0
+x[B, 7, B] = 1.0
+l[7, 6, B, 6] = 34.0
+l[B, 7, B, 6] = 34.0
+l[B, 7, B, 7] = 29.0
+m[6, B, B, 6] = 42.0
+m[6, B, B, 7] = 38.0
+m[7, 6, B, 7] = 38.0
+Tempo de execução: 0.0792508 segundos

@@ -1,0 +1,28 @@
+Processando o arquivo: D:/rafaelvc/SUPERCODIGO/dados\vrps_8053.dat
+status= OPTIMAL
+ID = 8053
+Numero de clientes = 10
+OF (custo) = 204.71999999999997
+Best Objective = 204.71999999999997
+Best Bound = 204.71999999999997
+GAP = 0.0%
+x[1, 5, A] = 1.0
+x[2, A, A] = 1.0
+x[4, 2, A] = 1.0
+x[5, 4, A] = 1.0
+x[A, 1, A] = 1.0
+l[1, 5, A, 2] = 14.0
+l[1, 5, A, 4] = 15.0
+l[4, 2, A, 2] = 14.0
+l[5, 4, A, 2] = 14.0
+l[5, 4, A, 4] = 15.0
+l[A, 1, A, 1] = 11.0
+l[A, 1, A, 2] = 14.0
+l[A, 1, A, 4] = 15.0
+m[1, 5, A, 1] = 14.0
+m[2, A, A, 1] = 14.0
+m[2, A, A, 2] = 19.0
+m[4, 2, A, 1] = 14.0
+m[5, 4, A, 1] = 14.0
+n[5, 4, A, 4] = 1.0
+Tempo de execução: 0.0575865 segundos

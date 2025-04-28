@@ -1,0 +1,8 @@
+Processando o arquivo: E:/rafaelvc/SUPERCODIGO/dados\vrps_8098.dat
+status= TIME_LIMIT
+ID = 8098
+Numero de clientes = 30
+Nenhuma solução viável foi encontrada.
+O tempo limite foi atingido.
+Nenhuma solução parcial disponível para as variáveis.
+Tempo de execução: 7201.2490354 segundos
