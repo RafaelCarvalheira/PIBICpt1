@@ -127,4 +127,4 @@ Este projeto está licenciado sob a **Mozilla Public License 2.0**. Consulte o a
 ## Contato
 
 Para dúvidas ou sugestões, entre em contato com o mantenedor do projeto:
-- **Rafael Carvalheira**: [inserir email ou link para perfil]
+- **Rafael Carvalheira**: rafaelvargascar20@gmail.com
