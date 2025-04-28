@@ -19,7 +19,6 @@ Este projeto tem como objetivo otimizar a execução de 100 instâncias do **VRP
 │   ├── utils.jl              # Funções auxiliares para manipulação de dados
 │   ├── utils2.jl             # Funções adicionais de suporte
 │   ├── data_filter.jl        # Funções para filtragem de dados
-│   └── result_processor.jl   # Script para organizar resultados em Excel
 ├── .gitignore                # Arquivo para controle de versão
 ├── LICENSE                   # Licença do projeto (MPL 2.0)
 └── README.md                 # Documentação do projeto
@@ -92,20 +91,12 @@ Certifique-se de que as seguintes ferramentas e dependências estão instaladas:
      filtered_data = filter_instances(raw_data, min_nodes=10, max_nodes=100)
      ```
 
-### 3. Organizar Resultados
-   - Após a execução das instâncias, organize os resultados em um arquivo Excel categorizado:
-     ```julia
-     include("src/result_processor.jl")
-     processar_pasta("data/processed/results", "dados_categorizados.xlsx")
-     ```
-   - **Descrição**: O script `result_processor.jl` lê arquivos `.txt` na pasta `data/processed/results/`, extrai informações como ID, número de clientes, custo, status, %Gap e tempo de execução, e organiza os dados em um arquivo Excel com abas separadas por categoria.
-
-### 4. Resultados
+### 3. Resultados
    - Resultados brutos são salvos em `data/processed/results/` (arquivos `.txt`).
    - Dados filtrados são salvos em `data/processed/modified/`.
    - O arquivo Excel (`dados_categorizados.xlsx`) é gerado no diretório especificado, contendo os resultados organizados por categoria.
 
-### 5. Análise
+### 4. Análise
    - Use o arquivo Excel para comparar o desempenho de diferentes algoritmos aplicados ao SCCVRP. As abas categorizadas facilitam a análise de métricas como custo, tempo de execução e %Gap.
 
 ---
@@ -153,24 +144,11 @@ Modifique a função `filter_instances` em `src/data_filter.jl` para adicionar n
 
 A funcionalidade de processamento de resultados organiza os dados gerados pelas execuções do SCCVRP em um arquivo Excel estruturado, com abas separadas por categoria. Isso simplifica a análise comparativa de métricas como custo, tempo de execução e %Gap.
 
-### Como Funciona
-O script `result_processor.jl`:
-- Lê arquivos `.txt` na pasta `data/processed/results/`.
-- Extrai métricas: ID, número de clientes, custo (OF), status, %Gap, tempo de execução.
-- Organiza os dados em um arquivo Excel, com uma aba para cada categoria (extraída do nome do arquivo, ex.: `outputCategoria.txt`).
-
-### Uso
-```julia
-include("src/result_processor.jl")
-processar_pasta("data/processed/results", "dados_categorizados.xlsx")
-```
 
 ### Saída
 - Um arquivo Excel (`dados_categorizados.xlsx`) com abas nomeadas por categoria.
 - Cada aba contém colunas: ID, Número de Clientes, OF (Custo), Status, %Gap, Tempo de Execução (segundos).
 
-### Personalização
-Modifique `result_processor.jl` para adicionar novas métricas ou ajustar a lógica de categorização.
 
 ---
 
